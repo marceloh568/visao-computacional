@@ -1,0 +1,5 @@
+4) Os filtros de desfoque gaussiano e de mediana suavizam a máscara de aresta para que 
+os efeitos do ajuste da nitidez sejam mesclados de uma maneira melhor na imagem final. 
+No filtro de desfoque de mediana, em relação ao raio da vizinhança, quando aumentado,
+aumenta o desfoque e ao contrário do filtro gaussiano, as quinas não são desfocadas mas 
+sim arredondadas. 

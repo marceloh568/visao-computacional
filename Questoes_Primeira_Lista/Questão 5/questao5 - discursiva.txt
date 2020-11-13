@@ -1,0 +1,1 @@
+5) Quando N cresce a imagem vai ganhando contornos e arestas mais densos/fortes.

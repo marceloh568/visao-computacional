@@ -1,5 +1,5 @@
 5) Um ponto de interesse é um ponto na imagem, para processamentos futuros, 
-que em geral pode ser caracterizados de diversas formas. Em algumas imagens há pontos
+que em geral pode ser caracterizado de diversas formas. Em algumas imagens há pontos
 de interesses únicos/exclusivos que facilitam bastante na correspondência dela com outra(s).
 Esse conceito embasa a questão da unicidade de pontos de interesse, conforme exemplificado
-em compilado de duas imagens anexas.
+em um compilado de duas imagens anexas.

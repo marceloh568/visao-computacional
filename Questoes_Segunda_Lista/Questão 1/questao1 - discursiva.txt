@@ -1,0 +1,40 @@
+1) 
+
+-(FUNCIONAMENTO) MORAVEC:
+O algoritmo verifica cada pixel na imagem para ver se há algum canto, 
+considerando a semelhança entre uma área centrada no pixel selecionado 
+com áreas próximas e amplamente sobrepostas.
+
+-(FUNCIONAMENTO) HARRIS:
+Supera as limitações do detector de Moravec. Usa matriz de autocorrelação
+e foca em cantos e bordas ao obter a variação da autocorrelação, 
+melhorando a taxa de detecção e repetibilidade. 
+
+
+-(FUNCIONAMENTO) SHI-TOMASE:
+Tomasi fez uma pequena modificação no algoritmo de Harris: eliminou 
+a função utilizada para calcular as pontuações dos pixels e utilizou
+os autovalores para verificar se o pixel é um canto ou não.
+
+-DISCUSSÃO DE PARÂMETROS E PRINCIPAIS DIFERENÇAS:
+No algoritmo do detector de Moravec um valor de limite menor é equivalente
+a mais pontos de interesse detectados e um menor erro, mas implica em mais
+tempo de computação. No de Harris, o parâmetro de limite se comporta da mesma
+maneira que no caso do detector Moravec. Com relação ao segundo parâmetro, k, 
+isso melhora o desempenho aumentando. Recomenda-se mantê-lo no intervalo 0,04 - 0,06.
+No de Shi-Tomasi, quanto maior o valor das características máximas, melhor será o desempenho. 
+Resultado aceitável em comparação com os outros algoritmos. O parâmetro de distância mínima 
+não apresenta diferenças notáveis, mas seu desempenho é ligeiramente melhor com valores ≤ 5.
+
+-EM QUAIS SITUAÇÕES SE ENQUADRAM:
+Moravec: Se saiu melhor em imagens pouco desfocadas, pois, quanto mais desfoque gaussiano, 
+menos recursos ele detecta e, mesmo em valores muito baixos, não detecta nenhum ponto.
+Harris: Se saiu melhor em imagens desfocadas, pois, quanto mais desfoque, mais pontos ele detecta.
+O erro ainda é baixo, mas o aumento exponencial no número de recursos o torna ineficaz.
+Shi-Tomasi: Se saiu bem em todas as situações. O comportamento é linear em relação ao aumento do desfoque
+
+-RESULTADO NAS IMAGENS E QUAL ACHEI MELHOR:
+Após a análise de todos os detectores, pude confirmar que o algoritmo Shi-Tomasi 
+é o mais versátil e portanto o melhor. Ele atua de forma aceitável na maioria dos casos. 
+Ele é seguido pelo detector de Harris, que embora seja insuficiente em certos ambientes é 
+bem altamente versátil.

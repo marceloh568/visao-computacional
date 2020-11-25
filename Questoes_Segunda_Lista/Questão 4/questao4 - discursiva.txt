@@ -1,0 +1,7 @@
+4) O matcher de força bruta é simples. Ele leva o descritor de um recurso
+no primeiro conjunto e é combinado com todos os outros recursos no segundo
+conjunto usando algum cálculo de distância e o mais próximo é devolvido.
+Quando se aumenta a quantidade de correspondências nos parâmetros do algoritmo, 
+algumas correspondências outliers (falsos positivos) também são obtidas. 
+Uma visualização um pouco melhor pode ser obtida diminuindo o número de 
+correspondências mostradas.

@@ -1,0 +1,5 @@
+4) O método calibrateCamera() é o método utilizado para encontrar e calcular os parâmetros da câmara. 
+Ele receberá nossos pontos como parâmetros e retornará uma lista de elementos com a matriz da câmera, 
+coeficiente de distorção, vetores de rotação e vetores de tradução. A matrix da câmera ajuda a transformar 
+pontos de objetos 3D em pontos de imagem 2D e o Coeficiente de distorção retorna a posição da câmera no mundo, 
+com os valores dos vetores de rotação e translação.
